@@ -69,14 +69,18 @@ li.button {
 }
 
 .text-box {
-  width: 550px;
+  box-sizing: border-box;
+  /* width: 550px; */
   height: 40px;
   border: 1px solid #6c66af;
   border-radius: 25px;
-  text-indent: 10%;
   background: url(images/magnifying-glass.png) no-repeat left center,
     url(images/microphone.png) no-repeat right center;
   background-position-x: 2%, 97%;
+  letter-spacing: normal;
+  cursor: context-menu;
+  padding: 0 4%;
+  width: 60%;
 }
 
 .text-box:hover {
@@ -145,9 +149,8 @@ li:hover {
 
   .text-box {
     width: 90%;
-    text-align: center;
     margin-left: 4%;
-    text-indent: -80%;
+    padding: 0 7%;
   }
 
   .button2[name="google search"] {
@@ -184,7 +187,6 @@ li:hover {
   }
   .mobile-left {
     float: left;
-    margin-left: -10px;
   }
 
   li.swap-right {
