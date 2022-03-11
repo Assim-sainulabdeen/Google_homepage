@@ -184,12 +184,12 @@ li:hover {
   }
   .mobile-left {
     float: left;
-    margin-left: 0px;
+    margin-left: -10px;
   }
 
   li.swap-right {
     float: none;
-    margin-left: -35%;
+    margin-left: -30%;
     display: inline-block;
   }
 
