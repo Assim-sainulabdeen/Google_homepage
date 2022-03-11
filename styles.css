@@ -1,9 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-align: center;
+
+  min-width: 400px;
 }
 
 ul {
@@ -12,7 +18,7 @@ ul {
 }
 
 li {
-  width: 40px;
+  width: 50px;
   height: 20px;
   float: right;
   list-style-type: none;
@@ -67,10 +73,10 @@ li.button {
   height: 40px;
   border: 1px solid #6c66af;
   border-radius: 25px;
-  text-indent: 50px;
+  text-indent: 10%;
   background: url(images/magnifying-glass.png) no-repeat left center,
     url(images/microphone.png) no-repeat right center;
-  background-position-x: 10px, 520px;
+  background-position-x: 2%, 97%;
 }
 
 .text-box:hover {
@@ -92,7 +98,7 @@ li.button {
   float: left;
   margin-top: 7px;
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 20px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -128,4 +134,45 @@ a.images:link {
 a:hover,
 li:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 820px) {
+  #content img {
+    width: 50%;
+    height: auto;
+    margin: 8% 22% 0 28%;
+  }
+
+  .text-box {
+    width: 80%;
+    text-align: center;
+    margin-left: 4%;
+    text-indent: -80%;
+  }
+
+  .button2[name="google search"] {
+    margin-left: 7%;
+  }
+
+  #language {
+    margin-left: 20px;
+  }
+
+  .bottomright,
+  .bottomleft {
+    text-align: center;
+    float: none;
+    margin-top: 2%;
+    padding: 5px;
+  }
+  #footer {
+    height: 100px;
+  }
+  .left {
+    margin-top: 3%;
+  }
+
+  .right {
+    padding: 23px;
+  }
 }
